@@ -1,4 +1,4 @@
-/*公用的css  common*/
+
 body{
     font-family: "Microsoft YaHei",sans-serif;
     font-size: 14px;
@@ -12,15 +12,15 @@ a:hover{
     text-decoration: none;
 }
 
-/*定义自定义的字体*/
+
 @font-face {
-    font-family: itheima;/*指定字体的名称*/
+    font-family: itheima;
     src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
     url('../fonts/MiFie-Web-Font.svg') format('svg'),
     url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
     url('../fonts/MiFie-Web-Font.woff') format('woff');
 }
-/*应用自定义字体*/
+
 .heima_icon{
     font-family: itheima;
 }
@@ -30,7 +30,7 @@ a:hover{
 .heima_icon_tel::before{
     content: "\e909";
 }
-/*顶部通栏*/
+
 .heima_topBar{
     border: 1px solid #ccc;
     font-size: 12px;
@@ -44,7 +44,7 @@ a:hover{
 .heima_topBar a:hover{
     color: #666;
 }
-/* + ~*/
+
 .heima_topBar > .container > .row > div{
     height: 40px;
     line-height: 40px;
@@ -53,7 +53,7 @@ a:hover{
 .heima_topBar > .container > .row > div + div{
     border-left: 1px solid #ccc;
 }
-/*二维码的位置及显示、隐藏*/
+
 .heima_app{
     position: relative;
     display: block;
@@ -70,7 +70,7 @@ a:hover{
     border-top: none;
     margin-left: -60px;
 }
-/*注册按钮*/
+/*注锟结按钮*/
 .heima_topBar .btn-register{
     background: #E92322;
     color: #fff;
@@ -80,12 +80,11 @@ a:hover{
     color: #fff;
     border-color:#E92322;
 }
-/*登录按钮*/
+
 .heima_topBar .btn-login:hover{
     text-decoration: none;
 }
-/*导航栏*/
-/*设置整个导航栏的背景色、下边框等*/
+
 .heima_nav {
     background-color: #fff;
     border:none;
@@ -105,7 +104,7 @@ a:hover{
 .heima_nav .navbar-text {
     color: #777;
 }
-/*设置导航栏每个菜单的样式*/
+
 .heima_nav .navbar-nav > li > a {
     color: #777;
     height: 80px;
@@ -117,7 +116,7 @@ a:hover{
     background-color: transparent;
     border-bottom: 3px solid #E92322;
 }
-/*设置活动菜单和非活动菜单的样式*/
+
 .heima_nav .navbar-nav > .active > a,
 .heima_nav .navbar-nav > .active > a:hover,
 .heima_nav .navbar-nav > .active > a:focus {
@@ -131,7 +130,7 @@ a:hover{
     color: #ccc;
     background-color: transparent;
 }
-/*设置汉堡按钮的样式*/
+
 .heima_nav .navbar-toggle {
     border-color: #ddd;
     margin-top: 23px;
@@ -154,7 +153,7 @@ a:hover{
     color: #555;
     background-color: #e7e7e7;
 }
-/*当屏幕小于等于767px菜单的样式*/
+
 @media (max-width: 767px) {
 
     .heima_nav .navbar-nav .open .dropdown-menu > li > a {
@@ -198,7 +197,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
     color: #ccc;
 }
 
-/*轮播图*/
+
 .pc_imageBox{
     height: 410px;
     width: 100%;
@@ -216,7 +215,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
     display: block;
 }
 
-/*信息*/
+
 .heima_info{
     padding: 50px;
     border-bottom: 1px solid #ccc;
@@ -233,7 +232,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
 .heima_info  a:hover{
     color: #E92322;
 }
-/*字体图标*/
+
 .heima_icon_E903::before{
     content: "\e903";
 }
@@ -252,7 +251,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
 .heima_icon_E902::before{
     content: "\e902";
 }
-/*预约*/
+
 .heima_book{
     padding: 25px 0;
     border-bottom: 1px solid #ccc;
@@ -275,7 +274,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
     color: #E92322;
     border-bottom: 1px dashed #E92322;
 }
-/*字体图标*/
+
 .heima_icon_E906::before{
     content: "\e906";
 }
@@ -283,7 +282,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
     content: "\e905";
 }
 
-/*产品*/
+
 .heima_product{
     background: #f5f5f5;
     border-bottom: 1px solid #ccc;
@@ -358,13 +357,13 @@ fieldset[disabled] .heima_nav .btn-link:focus {
     }
 }
 
-/*页签父盒子*/
+
 .nav-tabs-product-parent{
     width: 100%;
     overflow: hidden;
 }
 
-/*产品盒子*/
+
 .product_box{
     height: 150px;
     width: 100%;
@@ -454,7 +453,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
 .product_box_right p:first-of-type sub{
     bottom: 0;
 }
-/*工具提示*/
+
 .toolTip_box{
     position: absolute;
     top: 15px;
@@ -478,7 +477,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
     border: 1px solid red;
 }
 
-/*新闻*/
+
 .heima_news{
     padding: 20px 0;
 }
@@ -511,7 +510,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
     width: 1px;
 }
 
-/*新闻  tab*/
+
 .nav-tabs-news {
     border: none;
 }
@@ -531,13 +530,13 @@ fieldset[disabled] .heima_nav .btn-link:focus {
     padding: 0;
     text-align: center;
 }
-/*针对小屏幕设备*/
+
 @media screen  and (max-width: 992px) and (min-width: 768px){
     .nav-tabs-news > li > a {
         margin: 20px 40px;
     }
 }
-/*针对超小屏幕设备*/
+
 @media screen and (max-width: 768px) {
     .nav-tabs-news > li{
         width: 25%;
@@ -626,7 +625,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
 .heima_news .tab-pane > ul > li {
     padding: 10px;
 }
-/*字体图标*/
+
 .heima_icon_new01::before{
     content: "\e90e";
 }
@@ -640,7 +639,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
     content: "\e911";
 }
 
-/*合作伙伴*/
+
 .heima_partner{
     background: #f5f5f5;
     padding: 20px 0;
@@ -659,7 +658,7 @@ fieldset[disabled] .heima_nav .btn-link:focus {
 .heima_partner ul li:first-child{
     margin-left:0;
 }
-/*字体图标*/
+
 .heima_icon_partner01::before{
     content:"\e946";
 }
@@ -687,3 +686,5 @@ fieldset[disabled] .heima_nav .btn-link:focus {
 .heima_icon_partner09::before{
     content: "\e92d";
 }
+
+
